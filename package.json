@@ -1,0 +1,10 @@
+{
+  "name": "bookstore-management-system",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:client": "npm --prefix bookstore-app/client run dev",
+    "dev:server": "npm --prefix bookstore-app/server run dev",
+    "build": "npm --prefix bookstore-app/client run build"
+  }
+}
