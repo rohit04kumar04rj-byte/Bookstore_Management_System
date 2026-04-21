@@ -36,3 +36,19 @@ npm run dev
 - `npm run dev:client` - start the frontend only
 - `npm run dev:server` - start the backend only
 - `npm run build` - build the frontend
+
+## Deploy On Vercel
+
+1. Import this GitHub repository into Vercel.
+2. Keep the project root as the repository root.
+3. Add these environment variables in Vercel:
+
+```bash
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secure_jwt_secret
+VITE_API_URL=/api
+```
+
+4. Deploy the project.
+
+The frontend is built from `bookstore-app/client`, and the backend is exposed as a Vercel Function through [`api/index.js`](/Users/rohitkumar/Desktop/Bookstore_Management_System/api/index.js).
